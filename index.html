@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newborn Photography</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <img src="logo.png" alt="Chaya Sara Photography Logo" class="logo">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#book">Book a Session</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home section with slideshow -->
+    <section id="home" class="home-section">
+        <h2>Welcome to Chaya Sara Photography</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="slide1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide3.jpg" style="width:100%">
+            </div>
+        </div>
+        <p>Capture the precious moments of your newborn with our professional photography services.</p>
+    </section>
+
+    <!-- Gallery section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <!-- Gallery images -->
+            <img src="photo1.jpg" alt="Newborn Photo 1" class="gallery-item">
+            <img src="photo2.jpg" alt="Newborn Photo 2" class="gallery-item">
+            <img src="photo3.jpg" alt="Newborn Photo 3" class="gallery-item">
+            <!-- Add more photos as needed -->
+        </div>
+    </section>
+
+    <!-- Book a Session section -->
+    <section id="book" class="book-section">
+        <h2>Book a Session</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="First and last name" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="123@example.com" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Comments"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Chaya Sara Photography captured the most beautiful moments of our newborn. Highly recommend!" - Sarah K.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Amazing experience! The photos are stunning and the service was excellent." - John D.</p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>If you have any questions or would like more information, please <a href="mailto:info@newbornphotography.com">email us</a>.</p>
+    </section>
+
+    <!-- Lightbox for viewing images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Chaya Sara Photography</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
